@@ -1,0 +1,11 @@
+@startuml usermanagement
+left to right direction
+actor "Admin" as admin
+rectangle UserManagement {
+  usecase "Register Admin" as UC1
+  usecase "Manage User" as UC2
+}
+admin --> UC1
+admin --> UC2
+
+@enduml
